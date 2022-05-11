@@ -2,6 +2,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
+let size = 30;
 const refs = {
   createButton: document.querySelector("[data-create]"),
   destroyButton: document.querySelector("[data-destroy]"),
@@ -10,7 +11,6 @@ const refs = {
 }
 
 function createBoxes(amount) {
-  let size = 30;
   for (let i = 0; i < amount; i += 1) {
     const newDivEl = document.createElement("div");
     newDivEl.style.width = `${size}px`;
