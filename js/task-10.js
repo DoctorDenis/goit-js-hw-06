@@ -27,4 +27,5 @@ refs.createButton.addEventListener("click", () => {
 
 refs.destroyButton.addEventListener("click", () => {
   refs.divBoxesEl.innerHTML = "";
+  size = 30;
 })
