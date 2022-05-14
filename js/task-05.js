@@ -3,7 +3,7 @@ const refs = {
   spanElement: document.querySelector("span#name-output")
 };
 
-refs.inputElement.addEventListener("keyup", onInputElementKeyup);
+refs.inputElement.addEventListener("input", onInputElementKeyup);
 
 function onInputElementKeyup() {
   const inputValue = refs.inputElement.value;

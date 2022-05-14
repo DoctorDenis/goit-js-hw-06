@@ -12,12 +12,12 @@ function onFormSubmit(event) {
     alert("You have to fill all fields in the form!!!\n😠");
   } else {
     const name = event.currentTarget.elements.email.name;
-    const pass = event.currentTarget.elements.password.name;
+    const pass = event.currentTarget.elements.password.name;    
     outputObj[name] = emailElementValue;
     outputObj[pass] = passwordElementValue;
+    console.log(outputObj);
+    event.currentTarget.reset();
   }
-  event.currentTarget.reset();
-  return console.log(outputObj);
 }
 
 refs.form.addEventListener("submit", onFormSubmit);

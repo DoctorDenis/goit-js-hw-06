@@ -6,13 +6,16 @@ const refs = {
 
 refs.decrementButton.addEventListener('click', onDecrementButtonClick);
 refs.incrementButton.addEventListener('click', onIncrementButtonClick);
-refs.counterValue.textContent = 0;
+let value = Number(refs.counterValue.textContent);
 
 function onDecrementButtonClick() {
-    refs.counterValue.textContent = Number(refs.counterValue.textContent) - 1;
+    value -= 1;
+    refs.counterValue.textContent = value;
+
 }
 
 function onIncrementButtonClick() {
-    refs.counterValue.textContent = Number(refs.counterValue.textContent) + 1;
+    value += 1;
+    refs.counterValue.textContent = value;
 }
 
